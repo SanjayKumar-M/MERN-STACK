@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Subs from '../Subs'
 const Home = () => {
   return (
-    <div>Home</div>
+    <Subs />
   )
 }
 

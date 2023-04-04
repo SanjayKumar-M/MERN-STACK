@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 const App = () => {
 
   return (
-    <div className='App'>
+    <div className='nav'>
          <ul>
             <li><Link to='/home'>Home</Link></li>
-            <li><Link to='about'>About</Link></li>
-            <li><Link to='docs'>Docs</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/docs'>Docs</Link></li>
         </ul>
     </div>
   )

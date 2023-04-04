@@ -18,7 +18,7 @@ const Subs = () => {
     }
    
   return (
-    <div className='App'>
+    <div className='nav'>
         <div className='yout'>{sub}</div>
         <button onClick={handle}>{buton}</button>
     </div>
