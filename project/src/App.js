@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Link } from 'react-router-dom'
-import DarkMode from './Components/DarkMode'
+
 
 const App = () => {
 
