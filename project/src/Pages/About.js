@@ -1,22 +1,28 @@
 import React from 'react'
 import '../Counter.css'
 import { useState } from 'react'
+import Props from '../Components/Props';
 const About = () => {
-  const [num,setNum] = useState('');
-  const handleClick = () =>{
-    const parsedNum = parseInt(num);
-    if(parsedNum%2 === 0){
-      setNum("Even");
+  
+  const [mess,setMess] = useState('');
+  const [buton,setButon] = useState('Display Message');
+  
+  const handle = () =>{
+    
+    if(buton === 'Display Message'){
+      setButon('Displayed Successfully');
+      setMess("Hello Sanjay")
     }
     else{
-      setNum("Odd");
+      setButon('Display Message');
+      setMess("")
     }
   }
   return (
     <div className='middle'>
-      <input placeholder='Enter the number'  onChange={(event) => setNum(event.target.value)} />
-      <button onClick={handleClick}> Odd or Even</button>
-      <h2>The Number is {num}</h2>
+      <h1>{mess}</h1>
+      <button onClick={handle}>{buton}</button>
+      <Props name='Sanjay'></Props>
     </div>
 
   )
