@@ -1,15 +1,32 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
 
 const DarkMode = () => {
-  const [dark] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   return (
     <div>
-        <h1 style={{color : dark ? "black" : "gold"}}>This is Conditional Rendering</h1>
-        {dark && <button >Click here to change</button>}
+      <h1>My Website</h1>
+      <button onClick={handleToggle}>
+        {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      </button>
+      <div
+        style={{
+          background: isDarkMode ? 'black' : 'white',
+          color: isDarkMode ? 'white' : 'black',
+          height: '100vh',
+          padding: '1rem',
+        }}
+      >
+        <h2>Hello, Sanjay</h2>
+       
+       
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default DarkMode
+export default DarkMode;
