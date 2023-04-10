@@ -9,8 +9,9 @@ const Api = () => {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await axios.get('https://rickandmortyapi.com/api/episode');
+        const response = await axios.get('https://rickandmortyapi.com/api/character');
         setCharacters(response.data.results);
+        console.log(response.data.results)
       } catch (error) {
         console.error('Error fetching characters:', error);
       }
@@ -21,8 +22,10 @@ const Api = () => {
   }, []);
 
   const characterList = characters.map(character => (
-    <li key={character.id}>{character.name } <br></br>{character.episode} <br></br>{character.image}</li>
-    
+    <div>
+    <li key={character.id}>{character.name } </li>
+    <img src={character.image} alt={character.name} />
+    </div>
   ));
 
   return (
