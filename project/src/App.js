@@ -10,7 +10,7 @@ const App = () => {
      
         <nav>
           <div>
-            <p>MERN</p>
+              <p>MERN</p>
           </div>
           <ul>
             
