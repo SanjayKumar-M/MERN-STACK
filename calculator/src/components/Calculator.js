@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Caluculator.css';
-
+import { Link } from 'react-router-dom';
 const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('');
   const [result, setResult] = useState('');
@@ -67,7 +67,9 @@ const Calculator = () => {
           </button>
         </div>
       </div>
+      <button><Link to='/'>Back</Link></button>
     </div>
+    
     </div>
   );
 };
