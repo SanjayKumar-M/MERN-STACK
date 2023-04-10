@@ -25,6 +25,7 @@ const Calculator = () => {
   };
 
   return (
+    <div className='whole'>
     <div className="calculator-container">
       <div className="display-container">
         <input
@@ -66,6 +67,7 @@ const Calculator = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
