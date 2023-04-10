@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    box-shadow: none;
+    background-color:cornflowerblue
 }
 .calculator-container {
     max-width: 300px;
     margin: 0 auto;
-    background-color: #222;
+    background-color: #29082f;
     border-radius: 5px;
     padding: 15px;
     
@@ -25,7 +27,7 @@
     padding: 5px;
     border: none;
     outline: none;
-    background-color: #333;
+    background-color: #302c2c;
     color: #fff;
   }
   
@@ -51,7 +53,7 @@
     flex: 1;
     font-size: 18px;
     padding: 10px;
-    background-color: #444;
+    background-color: #200b0b;
     color: #fff;
     border: none;
     outline: none;

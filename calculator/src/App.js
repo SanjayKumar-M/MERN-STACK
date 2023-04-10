@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
-import Calculator from './components/Calculator'
 
+import Api from './components/Api'
 const App = () => {
   return (
     <div className='content'>
-     <Calculator />
+    
+     <Api />
 
     </div>
   )
