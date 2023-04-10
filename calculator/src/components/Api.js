@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../App.css'
+import './Api.css'
 import { Link } from 'react-router-dom';
 
 const Api = () => {
@@ -29,7 +29,7 @@ const Api = () => {
   ));
 
   return (
-    <div>
+    <div className='cartoon'>
       <h1>Rick and Morty Characters API Fetching</h1>
       <ul>{characterList}</ul>
       <button>
