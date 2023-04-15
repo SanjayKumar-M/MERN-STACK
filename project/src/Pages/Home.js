@@ -1,5 +1,5 @@
 import React from 'react'
-import Subs from '../Subs'
+import Subs from '../Components/Subs'
 const Home = () => {
   return (
     <Subs />
