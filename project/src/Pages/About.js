@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className='middle'>
       <h1>{mess}</h1>
-      <button onClick={handle}>{buton}</button>
+      <button onClick={handle} className='btn'  >{buton}</button>
       <Props name='Sanjay'></Props>
      
     </div>

@@ -20,7 +20,7 @@ const Subs = () => {
   return (
     <div className='nav'>
         <div className='yout'>{sub}</div>
-        <button onClick={handle}>{buton}</button>
+        <button onClick={handle} className='btn'>{buton}</button>
     </div>
   )
 }
