@@ -24,6 +24,7 @@ const App = () => {
         <div className='content'>
 
         <p>Click here to view the projects and topics Covered</p>
+        
       
         </div>
          
